@@ -1,0 +1,63 @@
+# ========================================
+# System Files
+# ========================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ========================================
+# IDE / Editors
+# ========================================
+.idea/
+.vscode/
+*.sublime-*
+
+# ========================================
+# Environment
+# ========================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ========================================
+# Dependencies
+# ========================================
+node_modules/
+vendor/
+
+# ========================================
+# Build / Output
+# ========================================
+/build/
+/dist/
+/.next/
+/out/
+
+# ========================================
+# Laravel Specific
+# ========================================
+/storage/*.key
+/storage/app/*
+/storage/framework/*
+/storage/logs/*
+!/storage/app/.gitignore
+!/storage/framework/.gitignore
+!/storage/logs/.gitignore
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+# ========================================
+# Testing
+# ========================================
+/coverage/
+.phpunit.result.cache
+
+# ========================================
+# Misc
+# ========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
