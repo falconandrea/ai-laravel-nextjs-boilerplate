@@ -111,21 +111,3 @@ After gathering answers:
 4. **Create** files in `.agents/context/` directory
 5. **Create** `.agents/memory/progress.md` with initial state
 6. **Switch** to ACTING MODE once approved
-```
-
----
-
-## 🎁 Bonus: .cursorrules (se usi Cursor)
-```
-# .cursorrules
-
-## AI Behavior
-Always read .agents/agents.md before starting any work.
-Follow the Operating Modes strictly.
-Update .agents/memory/progress.md after completing tasks.
-
-## File Priority
-1. .agents/agents.md
-2. .agents/memory/progress.md
-3. .agents/context/TECH_STACK.md
-4. Relevant .agents/context/ files for current task

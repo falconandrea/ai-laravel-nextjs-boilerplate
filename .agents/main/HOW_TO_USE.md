@@ -350,6 +350,52 @@ Create domain-specific skills:
 
 ---
 
+## 🖥️ IDE Configuration
+
+If you use an AI-powered IDE, you can configure it to work with this template.
+
+### Cursor
+
+Create a `.cursorrules` file in your project root:
+
+```
+# Cursor AI Rules
+
+## AI Behavior
+Always read agents.md before starting any work.
+Follow the Operating Modes strictly (PLANNING → ACTING → REVIEW).
+Update .agents/memory/progress.md after completing tasks.
+
+## Session Start
+1. Read agents.md
+2. Read .agents/memory/progress.md
+3. Read .agents/memory/lessons.md
+4. Ask: "Ready to continue with [current task]?"
+
+## File Priority
+1. agents.md - Main instructions
+2. .agents/memory/progress.md - Current state
+3. .agents/context/TECH_STACK.md - Stack versions
+4. .agents/context/BEST_PRACTICES.md - Patterns
+5. Relevant .agents/context/ files for current task
+
+## Rules
+- Never assume - always ask in PLANNING MODE
+- Always check TECH_STACK.md for versions before using libraries
+- Always update progress.md after work
+- Never repeat mistakes from lessons.md
+```
+
+### Windsurf
+
+Create a `.windsurfrules` file in your project root with the same content as above.
+
+### Other AI IDEs
+
+Most AI-powered IDEs support a rules file. Check your IDE documentation and create a similar file with the rules above.
+
+---
+
 ## 📚 Study Material
 
 ### Read Now
