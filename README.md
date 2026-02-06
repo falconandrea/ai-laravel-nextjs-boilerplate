@@ -211,6 +211,17 @@ Say: "Check .agents/context/TECH_STACK.md for correct versions"
 Say: "Read progress.md and tell me what's done and what's next"
 ```
 
+## 👥 Team Usage
+
+**Current Status**: This template is optimized for solo developers.
+
+For team usage, we recommend:
+- Each developer works on feature branches
+- Memory files (progress.md, lessons.md) use append-only format with timestamps
+- Regular sync meetings to consolidate learnings
+
+**Team-optimized workflows coming in v2.**
+
 ## 🔧 Supported Tech Stacks
 
 ### Laravel 12
