@@ -24,6 +24,8 @@ rm -rf .git
 git init
 ```
 
+> **💡 Note for Antigravity users**: This template uses `.agents/` (plural) which won't conflict with Antigravity's `.agent/` folder. Both can coexist in the same project.
+
 ### 2. Choose Your Stack
 
 Copy the appropriate tech stack template:
