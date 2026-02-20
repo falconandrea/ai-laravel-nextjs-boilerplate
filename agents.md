@@ -125,3 +125,5 @@ After every task:
 5. **NEVER** skip error handling
 6. **Laravel**: NEVER bypass Eloquent ORM without permission
 7. **Next.js**: NEVER mix client/server components incorrectly
+8. **ALL `.agents/` markdown files MUST be written in English** - No exceptions
+9. **ALL code comments MUST be written in English** - No exceptions
