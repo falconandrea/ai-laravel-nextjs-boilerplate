@@ -30,7 +30,13 @@ cp .agents/templates/TECH_STACK_nextjs.md .agents/context/TECH_STACK.md
 
 ### 3. Initialize Your Project
 
-**Open your AI chat (Claude/ChatGPT) and paste:**
+**If using Antigravity**, simply type:
+
+```
+/setup
+```
+
+**Otherwise, paste this into your AI chat:**
 
 ```
 Read the file .agents/prompts/01_project_setup.md and follow its instructions to help me set up this project.
@@ -49,6 +55,16 @@ That's it! Your AI now has complete context.
 ## 📖 Common Commands for Your AI
 
 Once set up, use these commands in your AI chat:
+
+### ⚡ Antigravity Slash Commands (recommended)
+
+| Command | Description |
+|---------|-------------|
+| `/start` | Start a new session — reads all memory files and summarises project state |
+| `/setup` | Set up a brand-new project — runs the full interrogation and generates all docs |
+| `/feature` | Add a new feature — creates a PRD, collects clarifying answers, generates tasks |
+
+### Standard AI Commands (any AI)
 
 ### Starting a New Session
 ```
@@ -118,7 +134,7 @@ I've reviewed all the documentation. Let's start with step 1.1 of the implementa
 ### Morning (Starting New Session)
 ```
 1. Open AI chat
-2. Say: "Read progress.md and tell me what's next"
+2. Type /start  (Antigravity) or "Read progress.md and tell me what's next"
 3. AI summarizes and proposes next task
 4. Say: "Approved, start implementing"
 ```

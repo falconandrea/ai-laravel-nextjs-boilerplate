@@ -115,6 +115,23 @@ After every task:
 
 ---
 
+## 🔁 Antigravity Workflows
+
+These slash commands are available when using the **Antigravity AI agent**. Each maps to a workflow file in `.agents/workflows/`.
+
+| Command | Workflow File | When to Use |
+|---------|--------------|-------------|
+| `/start` | `workflows/start.md` | Beginning of every work session — reads all memory files and summarises the project state |
+| `/setup` | `workflows/setup.md` | Starting a brand-new project — runs the full 8-phase interrogation and generates all `.agents/context/` docs |
+| `/feature` | `workflows/feature.md` | Adding a new feature — creates a PRD with clarifying questions, gets approval, then generates tasks |
+
+### When the agent should trigger each workflow automatically:
+- **Session start** → remind the user to run `/start` if memory files haven't been read yet
+- **New project detected** (empty `TECH_STACK.md` or `progress.md`) → suggest `/setup`
+- **Feature request** ("add X", "build Y", "implement Z") → suggest `/feature` before writing any code
+
+---
+
 ## ⚠️ Critical Rules
 
 ### Never Break These
