@@ -42,13 +42,13 @@ cp .agents/templates/TECH_STACK_nextjs.md .agents/context/TECH_STACK.md
 
 ### 3. Run Project Setup
 
-Copy the setup prompt:
+**If using Antigravity**, simply type:
 
-```bash
-cat .agents/prompts/01_project_setup.md
+```
+/setup
 ```
 
-Paste it into your AI chat (Claude, ChatGPT, etc.) and answer the questions. The AI will:
+**Otherwise**, paste the contents of `.agents/prompts/01_project_setup.md` into your AI chat (Claude, ChatGPT, etc.) and answer the questions. The AI will:
 1. Ask discovery questions
 2. Create all `.agents/context/` documentation files
 3. Set up initial progress tracking
@@ -58,8 +58,9 @@ Paste it into your AI chat (Claude, ChatGPT, etc.) and answer the questions. The
 
 Your AI now has complete context. You can use commands like:
 
+- `/start` → Start a new session (Antigravity)
+- `/feature [description]` → Create a PRD and task list (Antigravity)
 - "What's next?" → AI reads progress and suggests next steps
-- "New feature: [description]" → AI uses feature workflow
 - "Debug this: [bug]" → AI follows systematic debugging
 - "Review my code" → AI performs thorough review
 
@@ -114,9 +115,14 @@ Your AI now has complete context. You can use commands like:
     │   └── nextjs/
     │       └── app-router-guidelines.md
     │
-    └── templates/            # Tech stack templates
-        ├── TECH_STACK_laravel.md
-        └── TECH_STACK_nextjs.md
+    ├── templates/            # Tech stack templates
+    │   ├── TECH_STACK_laravel.md
+    │   └── TECH_STACK_nextjs.md
+    │
+    └── workflows/            # Antigravity slash command workflows
+        ├── start.md          # /start  - session start protocol
+        ├── setup.md          # /setup  - new project setup
+        └── feature.md        # /feature - new feature PRD flow
 ```
 
 ## 🎯 How AI Uses This Repo
@@ -142,6 +148,16 @@ Your AI now has complete context. You can use commands like:
 - AI checks `.agents/memory/lessons.md` for similar past issues
 - AI documents new learnings in `.agents/memory/lessons.md`
 - AI prevents repeating the same mistakes
+
+## ⚡ Antigravity Slash Commands
+
+If you are using **Antigravity**, these slash commands are available out of the box:
+
+| Command | Workflow File | Description |
+|---------|--------------|-------------|
+| `/start` | `workflows/start.md` | Start a new session — reads all memory files and summarises project state |
+| `/setup` | `workflows/setup.md` | Set up a new project — runs the full 8-phase interrogation and generates all context docs |
+| `/feature` | `workflows/feature.md` | Add a new feature — creates a PRD with clarifying questions, then generates a task list |
 
 ## 📝 Ready-to-Use Prompts
 
