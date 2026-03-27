@@ -1,3 +1,15 @@
+# ⚠️ DEPRECATED — This repository is no longer maintained
+
+> **This boilerplate has been split into two separate, focused repositories.**
+> Please use one of the new repos below instead. This repository will not receive further updates.
+
+| Stack | Repository |
+|-------|------------|
+| **Laravel** | [falconandrea/laravel-ai-boilerplate](https://github.com/falconandrea/laravel-ai-boilerplate) |
+| **Next.js** | [falconandrea/nextjs-ai-boilerplate](https://github.com/falconandrea/nextjs-ai-boilerplate) |
+
+---
+
 # 🤖 AI Agent Development Template
 
 A production-ready template repository for building Laravel 12 or Next.js 15+ projects with AI agents (Claude, ChatGPT, etc.). This template prevents **context drift** and ensures AI maintains project consistency across sessions.
